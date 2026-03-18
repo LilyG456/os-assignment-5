@@ -12,4 +12,13 @@ extern int Ky[3][3];
 
 // Thread function argument - TODO
 
+typedef struct {
+    int start;
+    int end;
+} ThreadData;
+
 // Function declarations - TODO
+
+void process(int start, int end);
+
+void* sobel_thread(void* arg);
